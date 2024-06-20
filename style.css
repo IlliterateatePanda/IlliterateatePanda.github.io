@@ -11,7 +11,10 @@ body {
     transform: scaleX(0.9);
     align-content: center;
 }
-
+img{
+    width: 62.5vw;
+    height: inherit;
+}
 h1 {
     text-align: center;
 }
@@ -165,5 +168,3 @@ p {
     letter-spacing: 0.3px;
     word-spacing: 0.2px;
 }
-/*Img*/
-
