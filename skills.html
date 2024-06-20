@@ -1,32 +1,180 @@
-<!DOCTYPE html>
-<html>
+/*Home*/
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Open Sans;
+    background-image: linear-gradient(to bottom, black, #045991);
+    color: #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+    transform: scaleX(0.9);
+    align-content: center;
+}
 
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-	<link rel="icon" type="image/x-icon" href="favicon.gif">
-    <title>Title</title>
-</head>
+h1 {
+    text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #223e6b;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
-<body>
-    <div class="cont">
-        <div class="nav">
-            <ul>
-                <h4>
-                    <li><a href="index.html">Home</a>
-                    <li><a href="dev.html">Dev Games</a>
-                    <li><a href="skills.html">Skills</a>
-                    <li><a href="aboutme.html">About Me</a>
-                </h4>
-            </ul>
-        <div class="infobox">
-            <div class="infostyle">
-		<p id="infotext">Hey yourself.</p>
-		</div>
-        </div>
+li {
+  float: left;
+}
 
-    </div>
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: white;
+  color: black;
+}
+.cont {
+    margin-left: 5%;
+    position: fixed;
+    top: 0;
+}
+button{
+    background-color: white;
+    border: none;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 20px;
+}
+.mainimg {
+    background-color: #2f5694;
+    width: 90vw;
+    height: 500px;
+    margin-top: 86px;
+}
 
-    <script type="text/javascript" src="script.js"></script>
-</body>
+.mainimgstyle {
+    background-color: #264678;
+    width: 69vw;
+    height: inherit;
+    transform: scale(0.9);
+    margin-left: -20px;
+    max-width: 1200px;
+}
 
-</html>
+.imgbar {
+    background-color: #2f5694;
+    width: 90vw;
+    height: 500px;
+    margin-top: 109px;
+}
+
+.imgbarstyle {
+    background-color: #264678;
+    width: 99.3vw;
+    height: inherit;
+    transform: scale(0.86);
+    margin-left: -5.28%;
+    max-width: 1980px;
+}
+.textboxstyle{
+    background-color: white;
+    width: 50vw;
+    height: inherit;
+    transform: scale(0.9)
+}
+/*About me*/
+.prof {
+    background-color: #2f5694;
+    width: 90vw;
+    height: 500px;
+    margin-top: 86px;
+    max-width: 1980px;
+    position: relative;
+}
+
+.profstyle {
+    background-color: #264678;
+    width: 107.7%;
+    height: 100%;
+    transform: scale(0.9);
+    margin-left: -60px;
+}
+
+.barR {
+    background-color: #2f5694;
+    width: 20.8vw;
+    height: 96%;
+    margin-top: 86px;
+    margin-right: 4.21%;
+    position: fixed;
+    right: 0;
+}
+
+.barstyle {
+    background-color: #264678;
+    width: 100%;
+    height: 102%;
+    transform: scale(0.9);
+}
+
+.extra {
+    background-color: #2f5694;
+    width: 68vw;
+    height: 49vh;
+    margin-top: 25px;
+}
+
+.extrastyle {
+    background-color: #264678;
+    width: 105%;
+    height: 100%;
+    transform: scale(0.9);
+    margin-left: -30px;
+}
+
+/*Dev Games*/
+.infobox {
+    background-color: #2f5694;
+    width: 90vw;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+.infostyle {
+    background-color: #172947;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9)
+}
+/*default text*/
+p {
+    font-family: Arial, sans-serif;
+    font-size: 180%;
+    text-shadow: 2px -1px 5px black;
+}
+/*custom text*/
+#indextext {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: -55.2%;
+    z-index: 10;
+    font-size: 180%;
+    letter-spacing: 0.3px;
+    word-spacing: 0.2px;
+}
+/*Img*/
+img{
+    width: 62.5vw;
+    height: inherit;
+}
