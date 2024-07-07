@@ -97,6 +97,7 @@ li a:hover {
     margin-left: -5.28%;
     max-width: 1980px;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .slider-track:hover{
    animation-play-state: paused;
