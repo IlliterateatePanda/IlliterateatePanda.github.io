@@ -99,9 +99,6 @@ li a:hover {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.slider-track:hover{
-    animation-play-state: paused;
-}
 .imgh:hover{
     scale:1.01;
 }
