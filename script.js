@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     images.forEach(image => {
         const clone = image.cloneNode(true);
         sliderTrack.appendChild(clone);
+        
     });
 
     // Calculate the total width of the images
@@ -34,8 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const styleSheet = document.styleSheets[0];
     styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
 });
-
-//popup
 
 // Get all modal trigger elements (images)
 var images = document.getElementsByClassName('imgh');
@@ -66,15 +65,30 @@ function closeModal() {
   sliderTrack.style.animationPlayState = "running";
 }
 
-// Loop through each trigger element
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
-  
-  // Attach click event to each image
-  img.onclick = function(){
-    openModal(this.src); // Open modal with clicked image src
-  };
+// Clone images to create a seamless loop and attach event listeners
+const sliderTrack = document.querySelector('.slider-track');
+const totalImages = sliderTrack.querySelectorAll('img').length;
+for (let i = 0; i < totalImages; i++) {
+  const clone = images[i].cloneNode(true);
+  sliderTrack.appendChild(clone);
+  clone.classList.add('imgh'); // Ensure cloned images have the same class
+
+  // Attach click event to each cloned image
+  clone.addEventListener('click', () => {
+    openModal(clone.src); // Open modal with clicked image src
+  });
 }
+
+// Get all original and cloned modal trigger elements (images)
+const allImages = sliderTrack.querySelectorAll('img');
+
+// Loop through each trigger element
+allImages.forEach(img => {
+  // Attach click event to each image
+  img.addEventListener('click', () => {
+    openModal(img.src); // Open modal with clicked image src
+  });
+});
 
 // Close the modal when close button is clicked
 closeButton.onclick = function() {
