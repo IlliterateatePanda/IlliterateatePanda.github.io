@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set the animation duration based on the total width
     const duration = totalImages * 3; // Adjust timing as needed
-    sliderTrack.style.animationDuration = `${25}s`;
+    sliderTrack.style.animationDuration = `${48}s`;
 
     // Adjust keyframes dynamically
     const keyframes = `
