@@ -108,3 +108,32 @@ document.addEventListener('keydown', function(event) {
     closeModal();
   }
 });
+
+function toggleDiv(divId) {
+  const divs = document.querySelectorAll('.toggle-div');
+  let isCurrentlyVisible = false;
+  
+  divs.forEach(div => {
+      if (div.id === divId) {
+          if (div.style.display === 'block') {
+              isCurrentlyVisible = true;
+              div.style.display = 'none';
+          } else {
+              div.style.display = 'block';
+          }
+      } else {
+          div.style.display = 'none';
+      }
+  });
+
+  if (!isCurrentlyVisible) {
+      const introDiv = document.getElementById('sintro');
+      if (divId !== 'sintro') {
+          introDiv.style.display = 'none';
+      } else {
+          introDiv.style.display = 'block';
+      }
+  } else {
+      document.getElementById('sintro').style.display = 'block';
+  }
+}
