@@ -9,23 +9,42 @@
 
 <body>
     <div class="cont">
-        <div class="nav">
-            <ul>
+            <ul class="hul">
                 <h4>
-                    <li><a href="index.html">Home</a>
-                    <li><a href="dev.html">Dev Games</a>
-                    <li><a href="skills.html">Skills</a>
-                    <li><a href="aboutme.html">About Me</a>
-		    
+                    <li class="hli"><a class="ha" href="index.html">Home</a>
+                    <li class="hli"><a class="ha" href="dev.html">Dev Games</a>
+                    <li class="hli"><a class="ha" href="skills.html">Skills</a>
+                    <li class="hli"><a class="ha" href="aboutme.html">About Me</a>
                 </h4>
             </ul>
-        <div class="infobox">
-            <div class="infostyle">
-			<iframe src="https://www.youtube.com/embed/PLOPygVcaVE?si=bn4pz7j1RhMFeIkk&amp;controls=1"></iframe>
-		</div>
+        <div class="skillbox">
+            <div class="snav">
+                <ul class="sul">
+                        <button class="sbutton1" onclick="toggleDiv('sh1')">Programming</button>
+                        <button class="sbutton2" onclick="toggleDiv('sh2')">Sound Design</button>
+                        <button class="sbutton3" onclick="toggleDiv('sh3')">Art</button>
+                </ul>
+            </div>
+            <div id="sintro" class="toggle-div">
+                <h1 class="sheader">What now?</h1>
+                <h1 class="sh0">That depends on you. Learning the basics of programming, sound design, and Artistry can lead you to a number of professional fields. But that depends on what you put your focus into, although some of these skills overlap with some job positions we will be focusing on becoming a professional at one, but do not let that discourage you.</h1>
+            </div>
+            <div id="sh1" class="toggle-div">
+                <img class="img-preview"src="imgs/multibar/bee.jpg"  alt="TBD">
+                <h1 class="sh1">Though in your early days of game development you probably won’t interact with this often. In time you will definitely find yourself sorting through a pile of bugs and talking to a rubber duck for hours on end along the way though. Now what sort of language you know isn’t important. What is important is that you know the basics and have the will to keep learning. One area of expertise you can put your main focus on is Front-end development. Front-end developers typically focus on the design aspect of the user interface or UI. They will handle the looks along with how it interacts with the user. Picture a fancy popup animation or simple page to page navigation. A front-end developer is the face of the operating system. Another area to contrast front-end devs is of course Back-end development! Back-end developers are the brains sifting through all the data and information. Being a backend developer means you will need to shoulder the weight of the program and users. This typically calls for resolving issues, analyzing users needs, and designing efficient solutions for programs to make them run smoother and more efficiently. To put it much simpler, back-end programmers need to make sure things work together fast and seamlessly and that users' needs are being met while the front-end programmer has to design the look and how things interact with the user. One last field I'll talk about is more about understanding and explaining than just writing and managing a program. And that field is Technical writing! People under this field are the reason why instruction manuals, guides, journal articles, product descriptions, tutorials, ect exist nowadays. Without these people we’d have to learn how to use everything from scratch! Imagine trying to build something like an EKET (thanks ikea) without the very helpful instruction manual to build it.</h1>
+            </div>
+            <div id="sh2" class="toggle-div">
+                <img class="img-preview"src="imgs/multibar/pinepizza.jpg" alt="TBD">
+                <h1 class="sh1">Sound Design! For some this is the heart and soul of games. It gives an ambiance that’ll either drive someone mad in angst or sooth your heart as you calmly walk through the world with awe. There are also the smaller aspects like interacting with objects or your user interface (UI) for example. Sound design is meant to fill your world with life and emotion. Developing this skill would give plenty of leverage when planning to work professionally and even more so if you know how to use multiple recording and editing tools for sound. First and foremost you could become an Entrepreneur or Freelancer. With tools and experience you can easily market yourself and offer your services while having all the freedom and control of how and when you work. Become your own boss and build a business from scratch. Outside of that you can take your knowledge of sound design in any realm of work dealing with audio technical skills.</h1>
+            </div>
+            <div id="sh3" class="toggle-div">
+                <img class="img-preview"src="imgs/multibar/berrypeople.jpg" alt="TBD">
+                <h1 class="sh1">CCCLorem ipsum dolor sit amet, consectetur adipiscing elit. Ut egestas ornare accumsan. Proin hendrerit suscipit sem, vel faucibus justo laoreet sed. Duis semper tortor metus, vel tristique mi accumsan aliquet. Curabitur commodo, nibh nec molestie viverra, dui enim mattis nulla, hendrerit dapibus ligula ante nec orci. In laoreet tellus in libero sodales malesuada. Curabitur turpis lacus, varius non velit nec, sagittis porta orci. Cras lacinia sapien ante, eget bibendum urna placerat et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse imperdiet varius lectus sed interdum. Sed vehicula euismod velit, eu rhoncus mauris bibendum nec. Sed sit amet orci pretium, mattis diam sed, dictum mauris. Curabitur gravida purus at lectus hendrerit feugiat.
+
+                Duis scelerisque est et ipsum eleifend pharetra. Etiam nunc diam, rutrum quis bibendum vitae, mollis sed dolor. Quisque condimentum consequat turpis, vel blandit elit. Duis quis tortor commodo, blandit ante vel, auctor eros. Cras imperdiet rhoncus sem in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sagittis metus sit amet ipsum viverra, ut pulvinar est mollis. Nullam vel dictum sapien. Fusce elementum ut ante ac varius. Mauris quis accumsan lacus. Phasellus venenatis porttitor nisi, in sollicitudin mi faucibus et. Nunc congue sapien ac ex facilisis, non mattis eros tristique. Maecenas egestas faucibus tellus, sit amet laoreet enim commodo ut. </h1>
+            </div>
         </div>
     </div>
-
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
