@@ -9,11 +9,12 @@ body {
     background-attachment: fixed;
     background-size: cover;
     transform: scaleX(0.9);
+    text-wrap: balance;
 }
 h1 {
     text-align: center; 
 }
-ul {
+.hul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,18 +22,22 @@ ul {
     background-color: #223e6b;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     font-family: Open Sans;
 }
-li {
+.hli {
     float: left;
 }
-li a {
+.hli .ha {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+.hli .ha:hover {
+    background-color: white;
+    color: black;
 }
 li a:hover {
     background-color: white;
@@ -103,8 +108,6 @@ li a:hover {
 .imgh{
     height: 100%;
 }
-
-
 /*TEST STUFF*/
 .modal {
     display: none; /* Hidden by default */
@@ -127,7 +130,6 @@ li a:hover {
     display: block;
     width: 900px;
 }
-
 /* The Close Button */
 .close {
   position: absolute;
@@ -138,7 +140,6 @@ li a:hover {
   font-weight: bold;
   transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
   color: #bbb;
@@ -223,7 +224,7 @@ iframe{
     object-position: 100% 10%;
     z-index: 1;
 }
-.overlay {
+.mplover {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -235,12 +236,13 @@ iframe{
     transition: .5s ease;
     background-color: #ffffff;
   }
-  .abtcont:hover .overlay {
+  .abtcont:hover .mplover {
     opacity: .2;
   }
   .abtcont:hover .mcl{
     color:black;
     text-shadow: 2px 2px 5px white;
+    transition: .2s ease;
   }
   .text {
     color: white;
@@ -275,6 +277,58 @@ iframe{
     bottom: 0;
     margin-bottom: 2px;
 }
+.miniimg{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    width: 15%;
+    position: fixed;
+    padding: 30px;
+    margin: 5%;
+    flex-wrap: wrap;
+}
+.ming{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    cursor: pointer;
+    scale: 1.2;
+}
+/* The Modal (background) */
+.custom-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    top: 0;
+  } 
+  /* Modal Content (image) */
+  .custom-modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    scale: 0.9;
+  }
+  /* The Close Button */
+  .custom-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  } 
+  .custom-close:hover,
+  .custom-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
 /*Dev Games*/
 .infobox {
     background-color: #2f5694;
@@ -386,4 +440,88 @@ img{
 .imgmain{
     height:inherit;
     width:100%;
+}
+/*skills*/
+.skillbox{
+    width: 86.86vw;
+    height: 200vh;
+    background-color:#0e192b;
+    border: #0d1d38be;
+    border-style:solid;
+    border-width: 30px;
+}
+.snav{
+    border-bottom: 23px solid #0d1d38be;
+    margin-top: 40px;
+    z-index: 5;
+}
+.sul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+    font-family: Open Sans;
+}
+.bsimg{
+    position:absolute;
+    z-index:0;
+    height: auto;
+    width: auto;
+}
+#sh1{
+    display: none;
+}
+.sh1{
+    position:absolute;
+    z-index:1;
+    margin-top: 20%;
+    text-wrap: balance;
+}
+.toggle-div {
+    display: none; /* Hide all divs by default */
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #000;
+}
+#sintro{
+    display: block;
+}
+  .sul button {
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+    border-style: none;
+  }
+  .sul{
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    
+  }
+  button:hover{
+    scale: 0.991;
+    cursor: pointer;
+  }
+  .navbar a.active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar button {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+.sheader{
+    transform: scale(1.2);
+}
+.sh0{
+    scale: 0.96;
 }
