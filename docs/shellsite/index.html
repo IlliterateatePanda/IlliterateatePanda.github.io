@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ghost in a shell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div id="page-container">
+      	<!-- header -->
+         <header>	
+			<ul>
+				 <li id="nav-page1">Home</li>  
+				 <li id="nav-page2">My Website</li> 
+				 <li id="nav-page3">Cat Facts</li> 
+                 <li id="nav-page4">Contact</li>
+			</ul>
+		</header>  
+      
+		<!-- content -->  
+        <main>
+            <div id="page1">
+                <h1>Personal Websites!<br>And my journey with making one.</h1>
+                <div class="outer">
+                    <div id="box1" class="inner">
+                        <div class="img-container">
+                            <img class="pwimg" src="PW Dian.png" alt="PW Dian">
+                            <a href="https://codepen.io/Dian-Pagan/pen/VwJvqPp" target="_blank"><div class="overlay">
+                                <div class="text">Dian Pagan's Personal Website</div>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div id="box2" class="inner">
+                        <div class="img-container">
+                            <img class="pwimg" src="PW Scaled Jed.png" alt="PW Scaled Jed">
+                            <a href="https://codepen.io/Jediyah-Anderson/pen/gOJXaoK" target="_blank"><div class="overlay">
+                                <div class="text">Jediyah Anderson's Personal Website</div>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div id="box3" class="inner">
+                        <div class="img-container">
+                            <img class="pwimg" src="PW Caleb.png" alt="PW Caleb">
+                            <a href="https://codepen.io/Caleb-Kantarakias/pen/dyryYmW" target="_blank"><div class="overlay">
+                                <div class="text">Caleb Kantarakias' Personal Webiste</div>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div id="box4" class="inner">
+                        <div class="img-container">
+                            <img class="pwimg" src="PW Jeremiah.png" alt="PW Scaled Darnell">
+                            <a href="https://app.bsd.education/share/o/pbvsg7vs/" target="_blank"><div class="overlay">
+                                <div class="text">Jeremiah Reyes's Personal Website</div>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page2">
+                <div id="p2ibox">
+                    <p id="p2text">This is my personal website. I've poured my heart into it over the past two months, working almost every day since I arrived at Hopeworks. It's both my pride and joy and my biggest challenge—I've spent so much time on it, but it's sadly is still a work in progress.<br><br><br>The central idea of my website revolves around games, game design and development, and the skills you can learn from creating your own games. I also touch on how these skills can be applied in professional fields.<br><br><br>On the homepage, you'll find a popular game showcased with a hook that I hope grabs your attention. If you scroll down, there's an animation featuring a list of indie games created by people just like us.<br><br><br>The second page, Dev Games, aims to show that there's no barrier to entry for learning how to make something. With the internet and the wealth of accessible information, there's never been a better time to pick up a new skill.<br><br><br>The third page, Skills, highlights how the abilities you develop through game creation can be transferred to other professional fields. I've chosen to focus on Programming, Sound Design, and Graphic Design.<br><br><br>The final page is the About Me page. This section is all about me—what I've worked on and a little insight into who I am. It's a space for me to imgsent myself and share my journey.</p>
+                </div>
+
+                <div class="custom-container">
+                    <div class="glink"><p>Click <a class="color" href="https://illiterateatepanda.github.io" target="blank">Here</a> to visit the website yourself!</p></div>
+                    <div class="custom-iframe-wrapper">
+                        <iframe id="custom-iframe" src="https://illiterateatepanda.github.io" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="page3">
+                <button id="get-cat-fact">Get a Cat Fact</button>
+                <p id="cat-fact-text">Click the button to get a random cat fact!</p>
+                <div class="cat-image-container">
+                    <img id="cat-image" src="" alt="Random Cat">
+                </div>
+            </div>
+            <div id="page4">
+                <form id="contactForm" action="https://formsimge.io/f/manwevjo" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" required>
+                
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                
+                    <button type="submit">Send</button>
+                    <p id="successMessage" class="hidden">Thank you! Your message has been sent.</p>
+                </form>
+            </div>
+		</main>
+
+        <!-- FOOTER -->
+        <footer> 
+		</footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="email.js"></script>
+    <script src="cat.js"></script>
+</body>
+
+</html>

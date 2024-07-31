@@ -1,0 +1,566 @@
+/*Home*/
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom, black, #045991);
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    transform: scaleX(0.9);
+    text-wrap: balance;
+}
+h1 {
+    text-align: center; 
+}
+.hul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #223e6b;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    font-family: Open Sans;
+}
+.hli {
+    float: left;
+}
+.hli .ha {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.hli .ha:hover {
+    background-color: white;
+    color: black;
+}
+li a:hover {
+    background-color: white;
+    color: black;
+}
+.cont {
+    margin-left: 5%;
+    position: fixed;
+    top: 0;
+}
+.mainimg{
+    background-color: #2f5694;
+    width: 90vw;
+    height: 500px;
+    margin-top: 86px;
+    overflow-x: hidden;
+}
+.mainimgstyle{
+    background-color: #264678;
+    width: 69vw;
+    height: inherit;
+    transform: scale(0.9);
+    margin-left: -20px;
+    max-width: 1200px;
+}
+.slider-track img {
+    width: 100%; /* Set the width of the images */
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-1070.8px * 9)); /* Adjust according to the number of images */
+    }
+}
+.slider{
+    background-color: #2f5694;
+    width: 90vw;
+    height: 500px;
+    margin-top: 109px;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+}
+.slider-track{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    white-space: nowrap;
+    animation: scroll linear infinite;
+    width: 100%;
+    height: 100%;
+}
+.sstyle{
+    background-color: #0e192b;
+    width: 99.3vw;
+    height: inherit;
+    transform: scale(0.86);
+    margin-left: -5.28%;
+    max-width: 1980px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.imgh:hover{
+    scale:1.01;
+    cursor: pointer;
+}
+.imgh{
+    height: 100%;
+}
+/*TEST STUFF*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    margin-top: 36.6%;
+    width: 100%; /* Full width */
+    height: 47%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+    margin-left: 5%;
+    margin-top: -2%;
+    display: block;
+    width: 900px;
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.textboxstyle{
+    background-color: white;
+    width: 50vw;
+    height: inherit;
+    transform: scale(0.9)
+}
+iframe{
+    border-style: none;
+    width: 560px;
+    height: 315px;
+    scale:2.5;
+    margin: 33%;
+    margin-top: 17%;
+}
+/*About me*/
+.prof {
+    background-color: #2f5694;
+    width: 90vw;
+    height: 500px;
+    margin-top: 86px;
+    max-width: 1980px;
+    position: relative;
+}
+.profstyle {
+    background-color: #264678;
+    width: 107.7%;
+    height: 100%;
+    transform: scale(0.9);
+    margin-left: -60px;
+}
+.barR {
+    background-color: #2f5694;
+    width: 20.8vw;
+    height: 95.7%;
+    margin-top: 86px;
+    margin-right: 4.21%;
+    position: fixed;
+    right: 0;
+}
+.barstyle {
+    background-color: #07214f;
+    width: 100%;
+    height: 60.5%;
+    transform: scale(0.9);
+    margin-top: 90%;
+}
+.extra {
+    background-color: #2f5694;
+    width: 68vw;
+    height: 49vh;
+    margin-top: 25px;
+}
+.extrastyle {
+    background-color: #264678;
+    width: 105%;
+    height: 100%;
+    transform: scale(0.9);
+    margin-left: -30px;
+}
+.abtmain{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+}
+.popout{
+    visibility: hidden;
+    transform:scale(1.5);
+    z-index: 5;
+}
+.banner{
+    width:100%;
+    height:100%;
+    position: fixed;
+    object-fit: cover;
+    object-position: 100% 10%;
+    z-index: 1;
+}
+.mplover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+  }
+  .abtcont:hover .mplover {
+    opacity: .2;
+  }
+  .abtcont:hover .mcl{
+    color:black;
+    text-shadow: 2px 2px 5px white;
+    transition: .2s ease;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .moverlay{
+    background-color: black;
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.2;
+  }
+  .mcl{
+    position: fixed;
+    z-index: 2;
+    margin-left:34%;
+    text-shadow: 2px 2px 5px black;
+  }
+  .git{
+    position: fixed;
+    margin: 5px;
+    margin-left: 38%;
+  }
+  .sinfo{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2px;
+}
+.miniimg{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: fixed;    
+    height: 25%;
+    width: 15%;
+    padding: 30px;
+    margin: 5%;
+
+}
+.ming{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    cursor: pointer;
+    scale: 1.2;
+}
+/* The Modal (background) */
+.custom-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    top: 0;
+  } 
+  /* Modal Content (image) */
+  .custom-modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    scale: 0.9;
+  }
+  /* The Close Button */
+  .custom-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  } 
+  .custom-close:hover,
+  .custom-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/*Dev Games*/
+.infobox {
+    background-color: #2f5694;
+    width: 90vw;
+    height: 280vh;
+}
+.infostyle {
+    background-color: #172947;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+}
+.infocont{
+    position: fixed;
+}
+.s1w{
+    float: right;
+    margin-left: 60%;
+    margin-top: 14%;
+    position:fixed;
+    text-shadow: 2px 2px 5px black;
+}
+.s1img{
+    scale:0.7;
+    margin-left: -90px;
+    margin-top: -3%;
+    position: fixed;
+}
+.s2w{
+    float: left;
+    margin-left: 13%;
+    margin-top: 55%;
+    position: fixed;
+    text-shadow: 2px 2px 5px black;
+}
+.s2imgs{
+    scale: 0.66;
+    margin-top: 35%;
+    margin-left: 38%;
+    position: fixed;
+}
+.s3w{
+    float: right;
+    margin-left: 57%;
+    margin-top: 96%;
+    position: fixed;
+    text-shadow: 2px 2px 5px black;
+}
+.s3imgs{
+    scale: 0.6;
+    margin-top: 75%;
+    margin-left: -10%;
+    position: fixed;
+}
+.s4w{
+    float: left;
+    margin-left: 8%;
+    margin-top: 127%;
+    position: fixed;
+    text-shadow: 2px 2px 5px black;
+}
+.s4imgs{
+    scale: 0.7;
+    margin-top: 119%;
+    margin-left: 40%;
+    position: fixed;
+}
+.dlinks{
+    text-decoration: line;
+    color: #ff9640;
+}
+.dgl{
+    color: white;
+    bottom: 0;
+    position: fixed;
+    margin-left: 43%; 
+    text-shadow: 2px 2px 5px black;  
+}
+.devlink{
+    color: orange;
+}
+/*default text*/
+p {
+    font-family: Arial, sans-serif;
+    font-size: 180%;
+    text-shadow: 2px -1px 5px black;
+}
+h2{
+    scale: 1.3;
+}
+
+/*custom text*/
+#indextext {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: -55.2%;
+    font-size: 180%;
+    letter-spacing: 0.3px;
+    word-spacing: 1.8px;
+    text-align: left;
+    text-shadow: 2px 2px 5px black;
+}
+/*Img*/
+img{
+    width: 62.5vw;
+
+}
+.imgmain{
+    height:inherit;
+    width:100%;
+}
+/*skills*/
+.skillbox{
+    width: 90vw;
+    height: auto;
+    background-color:#2f5694 ;
+}
+.skillboxstyle{
+    width: auto;
+    height: auto;
+    transform: scale(0.9);
+    background-color:#0e192b;
+    border-width: 30px;
+}
+.snav{
+    z-index: 5;
+}
+#sbt{
+    margin-top: 5px;
+}
+.sul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+    font-family: Open Sans;
+}
+.bsimg{
+    position:absolute;
+    z-index:0;
+    height: auto;
+    width: auto;
+}
+#sh1{
+    display: none;
+}
+.sh1{
+    position: static;
+    z-index:1;
+    margin-top: 5%;
+    text-wrap: balance;
+}
+.toggle-div {
+    display: none; /* Hide all divs by default */
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #000;
+}
+#sintro{
+    display: block;
+}
+  .sul button {
+    float: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+    border-style: none;
+  }
+  .sul{
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    
+  }
+  button:hover{
+    scale: 0.991;
+    cursor: pointer;
+  }
+  .navbar a.active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar button {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+.sheader{
+    transform: scale(1.2);
+}
+.sh0{
+    scale: 0.96;
+}
+.toggle-div{
+    border-style: none;
+}
+.wnimg{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.bubbles{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 100%;
+    overflow: hidden;
+}
+#bub1{
+    margin-left: 5%;
+}
+#bub2{
+    margin-left: 5%;
+}
+#bub3{
+    margin-left: 5%;
+}
+#bubtext{
+    float: right;
+    margin-left: 45%;
+    margin-top: 8%;
+    position:fixed;
+    text-shadow: 2px 2px 5px black;
+    text-wrap: wrap;
+}

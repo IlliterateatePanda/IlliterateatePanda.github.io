@@ -1,0 +1,19 @@
+So the plan for the multi image bar is:
+
+I plan to layer the images on top of each other but make it so a portion is visible, of course it'd be a nice fair amount with no issue or worry. I'd try and center the most interesting part of the picture as well.
+
+The pictures will consist of a still from the game, most likely an action shot or a nice visual piece to try and grab the viewer and intrigue them.
+
+Hovering your mouse over one of the pictures will bring them into focus, you'll be previewing a rectangular image that'll fit the style to avoid anything leaking outside of the bounds.
+
+There'll be an in-focus preview displaying a gif of the game in action then switch to a img of the game's banner, icon, or still
+
+Upon interaction (clicking) the image will be brought to the center screen with details of the game and reviews. It'll also include a link to the store page. The look of this event will be described below in minor to moderate detail:
+
+The background will change to about ~50% opacity with black overlaying everything (specify Z index/modify ALL preexisting Z-index's)
+
+There'll be 16:9 Aspect ratio box for the image to go into and a backdrop behind it to act as a wall to make everything else pop out (customizing this is a choice.) to the right of the image will be where all the information will be held, the scaling of this and possible scrolling
+
+The plan for my AboutMe page would be:
+
+Lets start off with the main banner and basically everything that 
