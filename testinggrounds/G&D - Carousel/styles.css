@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.slider-track img {
+    width: 100%; /* Set the width of the images */
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-1070.8px * 9)); /* Adjust according to the number of images */
+    }
+}
+.slider{
+    background-color: #2f5694;
+    width: 90vw;
+    height: 500px;
+    margin-top: 109px;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+}
+.slider-track{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    white-space: nowrap;
+    animation: scroll linear infinite;
+    width: 100%;
+    height: 100%;
+}
+.sstyle{
+    background-color: #0e192b;
+    width: 99.3vw;
+    height: inherit;
+    transform: scale(0.86);
+    margin-left: -5.28%;
+    max-width: 1980px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.slider-track:hover{
+    animation-play-state: paused;
+}
+.imgh:hover{
+    scale:1.01;
+}
+.imgh{
+    height: 100%;
+}
+
+
+/*TEST STUFF*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
