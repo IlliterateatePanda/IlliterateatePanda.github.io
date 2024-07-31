@@ -1,0 +1,463 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Quicksand", sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
+
+/* 
+	WEBSITE NAVIGATON BAR 
+*/
+
+header {
+    height: 120px;
+    background-color: navy;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    width: 80px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+li {
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+li:hover, li.active {
+    color: #FFD600;
+    transform: scale(1.1);
+}
+
+
+/* 
+	HOME PAGE
+*/
+
+#banner {
+    height: 300px;
+	background-image: url("https://previews.123rf.com/images/pedrope1111/pedrope11111805/pedrope1111180500126/101826188-a-stone-well-with-a-roof-in-the-middle-of-a-forest.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#banner h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+#banner h2 {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+/* 
+	ABOUT PAGE
+*/
+
+#page2 {
+    padding: 20px 30px;
+}
+
+#page2 h2 {
+	  color: navy;
+    text-align: center;
+}
+.gitlink{
+        text-decoration: line;
+        color: #ff9640;
+}
+
+/* 
+	SERVICE PAGE
+*/
+
+#page3 h2 {
+	 color: navy;
+    text-align: center;
+}
+
+#page3 h3 {
+    text-align: center;
+}
+
+.row {
+    margin-top: 30px;
+    display: flex;
+    text-align: left;
+}
+
+.row img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+
+
+/* 
+	FOOTER
+*/
+
+footer {
+    background-color: navy;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 100;
+}
+
+footer p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding: 100px 0 50px;
+}
+
+main > div {
+    padding: 20px 20px;
+	display: none;
+}
+
+header {
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	z-index: 100;
+}
+
+
+/* For mobile view - do NOT edit the CSS below! */
+@media screen and (max-width: 540px) {
+
+    .row,
+    .inner-row {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #banner {
+        height: 40vh;
+    }
+
+    #page1 img {
+        width: 200px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .row img {
+        display: block;
+        margin: 20px auto;
+    }
+
+    header {
+        height: 12vh;
+        min-height: 100px;
+    }
+
+    ul {
+        position: relative;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
+  	
+}
+/*extra pasted stuff*/
+
+
+/*Email*/
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Constrain textarea to vertical resizing only */
+textarea {
+    resize: vertical;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0072b1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #005f90;
+}
+
+/* Success message styling */
+.hidden {
+    display: none;
+}
+
+#successMessage {
+    text-align: center;
+    color: #28a745;
+    font-size: 16px;
+}
+
+
+/*Cat facts*/
+.cat-facts-header {
+    background-color: #006b3f;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.cat-facts-main {
+    padding: 2em;
+    text-align: center;
+}
+
+#get-cat-fact {
+    background-color: #005f4b;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#get-cat-fact:hover {
+    background-color: #004b3f;
+}
+
+#cat-fact-text {
+    font-size: 1.2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.cat-image-container {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #005f4b;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+}
+
+#cat-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.cat-facts-footer {
+    background-color: #006b3f;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+/*Webby*/
+.custom-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+    max-width: 1200px;
+    margin-top: 2%;
+    position: absolute;
+}
+
+.custom-iframe-wrapper {
+    width: 100%; /* Adjust the wrapper size as needed */
+    height: 700px; /* Adjust the wrapper height as needed */
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.custom-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160%; /* Adjust to zoom in/out */
+    height: 125%; /* Adjust to zoom in/out */
+    transform: scale(0.8); /* Adjust to zoom in/out */
+    transform-origin: 0 0;
+    margin-left: -14%;
+}
+#p2ibox{
+    position:relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25vw;
+    height: 700px;
+    float: right;
+    margin-top: 2%;
+    margin-right: 1%;
+    text-wrap: wrap;
+    overflow-y:auto;
+    z-index: 1;
+}
+#p2text{
+    letter-spacing: 0.3px;
+    word-spacing: 1.8px;
+    font-size: 120%;
+}
+.glink{
+    position:absolute ;
+    z-index: 1;
+    margin-top: -34px;
+}
+.color{
+    text-decoration: line;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+}
+#box1 {
+    width: 400px;
+    height: 400px;
+    background-color: #22559c;
+}
+
+#box2 {
+    width: 400px;
+    height: 400px;
+    background-color: #f27370;
+    margin: 2% 0% 0% 25%;
+
+}
+
+#box3 {
+    width: 400px;
+    height: 400px;
+  	background-color: #fa9856;
+    margin: 4% 0% 0% 50%;
+}
+
+#box4 {
+    width: 400px;
+    height: 400px;
+    background-color: #ede862;
+    margin: 6% 0% 0% 75%;
+}
+.inner {
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 3);
+    overflow: hidden;
+}
+.outer {
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.pwimg {
+    height: 100%;
+    width: 200%;
+    object-fit: cover;
+    object-position: -200px;
+}
+.img-container:hover .pwimg {
+    opacity: 0.3;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
