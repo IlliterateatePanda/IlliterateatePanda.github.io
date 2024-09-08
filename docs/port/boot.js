@@ -68,7 +68,7 @@
 
                                     // Redirect when bootDeleted equals 1
                                     if (bootDeleted === 1) {
-                                        window.location.href = 'home.html'; // Replace with your desired link
+                                        window.location.href = 'https://illiterateatepanda.github.io/port/home.html'; // Replace with your desired link
                                     }
                                 }, 900); // Delay of 900 milliseconds
                             }
