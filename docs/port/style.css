@@ -30,7 +30,27 @@ body {
   opacity: 40%;
   margin: 200px 0px 0px 900px;
 }
+.bsb{
+  color: white;
+  margin: 450px 340px;
+  padding: auto;
+  position: absolute;
+}
+/* Define the keyframes for the blinking animation */
+@keyframes blink {
+  0%, 100% { 
+    opacity: 1; /* Fully visible */
+  }
+  50% { 
+    opacity: 0; /* Fully transparent */
+  }
+}
 
+/* Apply the animation to the h1 element with class 'bsb' */
+h1.bsb {
+  animation: blink 1.5s infinite; /* 3 seconds duration, repeats infinitely */
+  animation-timing-function: ease-in-out; /* Smooth fading effect */
+}
 /* Typewriter effect */
 .h3typing {
   visibility: hidden; /* Initially hide the h3 elements */
@@ -62,9 +82,6 @@ body {
 }
 
 
-/*W3Temp*/
-
-
 /* Style the side navigation */
 .topnav {
   height: 5vh;
@@ -85,17 +102,6 @@ body {
   text-decoration: none;
   display: inline;
 }
-.bottom {
-  height: 5vh;
-  width: 100vw;
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-}
-
 /* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
